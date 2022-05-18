@@ -4,7 +4,7 @@
  */
 package virtualrestaurant;
 
-import java.util.Random;
+import java.util.*;
 
 /**
  *
@@ -21,9 +21,16 @@ public class CustomerGenerator {
         this.group = group;
     }
 
+    //create a random group size between 1 and 6;
     public int getCustomer(){
         Random  x = new Random();
-        return x;
+        int customerSize = 6;
+        int size = x.nextInt(customerSize);
+        if(size > 0){
+            return size;
+        }else{
+            return 1;
+        }
     }
     
     public CustomerGenerator() {
