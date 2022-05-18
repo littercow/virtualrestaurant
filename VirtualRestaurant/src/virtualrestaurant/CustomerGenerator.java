@@ -21,11 +21,11 @@ public class CustomerGenerator {
         this.group = group;
     }
 
-    public int getCustomer(){
-        Random  x = new Random();
+    public Random getCustomer() {
+        Random x = new Random();
         return x;
     }
-    
+
     public CustomerGenerator() {
     }
 
