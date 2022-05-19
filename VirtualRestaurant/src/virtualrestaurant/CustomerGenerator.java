@@ -31,8 +31,8 @@ public class CustomerGenerator {
         }else{
             return 1;
         }
-    }
-    
+
+
     public CustomerGenerator() {
     }
 
