@@ -8,3 +8,8 @@
 然后做一个 boolean 菜品制作
 如果计时完成 boolean = true
 else false
+
+5/18/2022 
+客户生成器基本完成。 自动生成1-6个人 组成得用餐客户。
+厨房需要一个menu。然后用hashmap 把menu数据储存。
+可能需要桌子得class 加入更多得条件。
