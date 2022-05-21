@@ -8,7 +8,7 @@ import java.util.*;
 
 /**
  *
- * @author littercow
+ * @author littercow，Cattail
  */
 public class CustomerGenerator {
 

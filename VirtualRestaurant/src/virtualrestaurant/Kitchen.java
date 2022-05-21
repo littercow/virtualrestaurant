@@ -4,6 +4,7 @@
  */
 package virtualrestaurant;
 import java.util.*;
+import java.io.*;
 /**
  *
  * @author littercow, Cattail
@@ -12,10 +13,10 @@ public class Kitchen {
     //create a Hashmap to store the dish name and cooking time.
     HashMap<String, Integer> menu = new HashMap<String, Integer>();
     String dish;
-    boolean stove = true;
+    List<Boolean> stoves = new ArrayList<>();
 
-    public Kitchen(String dish, Integer stove) {
-        this.stove = stove;
+    public Kitchen(String dish, Integer stove, List orders) {
+        createStove(stove);
     }
 
     //use dish name to find the timer.
@@ -23,10 +24,25 @@ public class Kitchen {
         return menu.get(dish);
     }
 
-    //check method to check if the stove currently open.
-    public boolean isStoveOpen(){
-        return stove;
+    //create a list of stoves;
+    private void createStove(int number){  
+        for(int i = 0; i< number; i++){
+            stoves.add(i,true);
+        }
     }
+    //check method to check if the stove currently open.
+    public int openStove(){
+        int x = 0;
+        for(int i = 0; i < stoves.size(); i++){
+            if(stoves.equals(true)){
+                return x;
+            }else{
+                x++;
+            }
+        }
+        return 0;
+    }
+
 
     
     public Kitchen() {
