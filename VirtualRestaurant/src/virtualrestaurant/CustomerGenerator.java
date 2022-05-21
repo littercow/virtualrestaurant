@@ -22,18 +22,15 @@ public class CustomerGenerator {
     }
 
     //create a random group size between 1 and 6;
-    public int getCustomer(){
-        Random  x = new Random();
+    public int getCustomer() {
+        Random x = new Random();
         int customerSize = 6;
-        int size = x.nextInt(customerSize);
-        if(size > 0){
-            return size;
-        }else{
-            return 1;
-        }
+        int size = x.nextInt(customerSize) + 1;
+
+        return size;
     }
-    
+
     public CustomerGenerator() {
-}
+    }
 
 }
