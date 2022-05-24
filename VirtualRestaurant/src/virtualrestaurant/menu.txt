@@ -1,3 +1,5 @@
-food, 20
-key, 10
-egg, 15
+rice, 5
+egg, 8
+chicken, 10
+beef, 20
+pig, 15

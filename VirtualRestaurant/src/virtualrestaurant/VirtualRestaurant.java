@@ -15,6 +15,8 @@ public class VirtualRestaurant {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Customer asdf = new Customer();
+        System.out.println(asdf);
 
     }
 
